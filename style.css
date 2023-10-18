@@ -5,3 +5,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+/****** COMMON ******/
+.container{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+    display: flex;
+}
+
+
+/****** DEBUG *****/
+.sidebar img{
+    color: white;
+}
+
+/******* BODY *******
+/****** MAIN ********/
+.sidebar{
+    width: 10%;
+    background-color: #000000;
+}
+
+.mainpanel{
+    width: 90%;
+}
+
+main .mainpanelhead{
+    background-color: #080b12;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 5.625rem;
+}
+
+main .mainpanel .mainpanelhead button{
+    border: 1px solid white;
+    color: white;
+    background-color: #080b12;
+    margin-right: 1.25rem;
+    padding: 0.9375rem;
+    border-radius: 20px;
+    
+}
+
+/****** FOOTER *****/
+
+
+
+
