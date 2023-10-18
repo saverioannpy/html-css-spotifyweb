@@ -168,7 +168,7 @@ footer{
 }
 
 .footer-player .footer-player-sx .footer-player-sx-info p{
-    font-size: 10px;
+    font-size: 0.625rem;
 
 
 }
@@ -181,9 +181,48 @@ footer{
 .footer-player .footer-player-center{
     display: flex;
     width: 60%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.25rem;
 }
 
 
+.footer-player-center-icon .footer-player-center-icon-row{
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.footer-player-center-icon-row .footer-player-center-icon-row-sx-dx{
+    display: flex;
+    gap: 1.25rem;
+    
+}
+
+.footer-player-center-icon-row .footer-player-center-icon-row-center{
+    font-size: 2rem;
+}
+
+.footer-player-center-icon-row .footer-player-center-icon-row-time span{
+    font-size: 0.625rem;
+}
+
+.footer-player-center-icon-row .footer-player-center-icon-row-time{
+    width: 10%;
+}
+
+.footer-player-center-icon-row .footer-player-center-icon-row-timebar{
+    width: 90%;
+}
+
+.footer-player-center-icon-row .footer-player-center-icon-row-timebar hr{
+    height: 0.3125rem;
+    width: 100%;
+    border: 0;
+    background-color: #5a5a5a ;
+    border-radius: 15px;
+}
 /***** Zona destra del footer ******/
 
 footer{
@@ -191,7 +230,7 @@ footer{
     bottom: 0;
     right: 0;
     left: 0;
-    height: 90px;
+    height: 5.625rem;
 }
 
 .footer-player .footer-player-dx{
