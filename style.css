@@ -22,13 +22,7 @@ body{
 
 
 /****** DEBUG *****/
-.sidebar img{
-    color: white;
-}
 
-.recentlyplayed h2{
-    color: white;
-}
 
 /******* BODY *******
 /****** MAIN ********/
@@ -36,8 +30,29 @@ body{
 /***** Menu verticale sinistro ****/
 
 .sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 10%;
     background-color: #000000;
+}
+
+.sidebar .sidebar-up,
+.sidebar .sidebar-down{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.3125rem;
+    gap: 0.9375rem;
+}
+
+.sidebar .sidebar-up .sidebar-icon-box,
+.sidebar .sidebar-down .sidebar-icon-box{
+    width: 30px;
+}
+
+.sidebar .sidebar-up img,
+.sidebar .sidebar-down img{
+    width: 100%;
 }
 
 
@@ -82,6 +97,7 @@ main .mainpanel .spotify-nav ul{
 /***** Griglia Songs *****/
 
 .recentlyplayed h2{
+    color: white;
     padding-left: 1.25rem;
     padding-bottom: 2.1875rem;
 }
