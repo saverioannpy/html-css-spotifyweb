@@ -26,12 +26,22 @@ body{
     color: white;
 }
 
+.recentlyplayed h2{
+    color: white;
+}
+
 /******* BODY *******
 /****** MAIN ********/
+
+/***** Menu verticale sinistro ****/
+
 .sidebar{
     width: 10%;
     background-color: #000000;
 }
+
+
+/***** Pannello Principale ****/
 
 .mainpanel{
     width: 90%;
@@ -51,10 +61,11 @@ main .mainpanel .mainpanelhead button{
     color: white;
     background-color: #080b12;
     margin-right: 0.3125rem;
-    padding: 0.9375rem;
-    border-radius: 20px;
+    padding: 0.9375rem 2.5rem;
+    border-radius: 25px;
     
 }
+/***** Menu alto di navigazione Pannello Principale****/
 
 main .mainpanel .spotify-nav ul{
     font-size: 12px;
@@ -66,6 +77,42 @@ main .mainpanel .spotify-nav ul{
     gap: 1.5625rem;
     padding: 1.25rem 1.875rem;
     text-decoration: none;
+}
+
+/***** Griglia Songs *****/
+
+.recentlyplayed h2{
+    padding-left: 1.25rem;
+    padding-bottom: 2.1875rem;
+}
+
+.songs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.songs h4{
+    text-align: center;
+}
+
+.songs .song{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.songs .song img{
+    width: 13.75rem;
+    height: 13.75rem;
+}
+
+.songs .song p{
+    padding-top: 1rem;
+    padding-bottom: 0.625rem;
+    font-size: 0.625rem;
+    color: #5b5f64;
 }
 
 /****** FOOTER *****/
