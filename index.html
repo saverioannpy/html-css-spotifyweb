@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Style CSS-->
     <link rel="stylesheet" href="style.css">
     <title>Spotify</title>
@@ -57,12 +59,12 @@
                 <!--Opzioni di navigazione del menu centrale-->
                 <nav class="spotify-nav">
                     <ul>
-                        <li><a href=""></a>IN EVIDENZA</li>
-                        <li><a href=""></a>PODCAST</li>
-                        <li><a href=""></a>CLASSIFICHE</li>
-                        <li><a href=""></a>GENERI E MOOD</li>
-                        <li><a href=""></a>NUOVE USCITE</li>
-                        <li><a href=""></a>SCOPRI</li>
+                        <li><a href="#"></a>IN EVIDENZA</li>
+                        <li><a href="#"></a>PODCAST</li>
+                        <li><a href="#"></a>CLASSIFICHE</li>
+                        <li><a href="#"></a>GENERI E MOOD</li>
+                        <li><a href="#"></a>NUOVE USCITE</li>
+                        <li><a href="#"></a>SCOPRI</li>
                     </ul>
                 </nav>
                 <!-- Sezione Recently Played-->
@@ -166,7 +168,54 @@
         </div>
     </main>
     <footer>
+        <!-- Player al footer-->
+        <div class="footer-player">
+            <!-- Player al footer sinistra-->
+            <div class="footer-player-sx">
+                <!-- Player al footer sinistra cover del brano-->
+                <div class="footer-playes-sx-img">
+                    <img src="img/sinister.jpeg" alt="immagine canzone in riproduzione">
+                </div>
+                <!-- Player al footer sinistra informazioni sul brano-->
+               <div class="footer-player-sx-info">
+                    <h6>Sinister</h6>
+                    <p>Brano</p>
+                    <p>Nome</p>
+                </div>
+                <!-- Player al footer sinistra icone opzioni preferite/cartella-->
+                <div class="footer-player-sx-options">
+                    <p>
+                        <i class="fa-regular fa-heart"></i>
+                    </p>
+                    <p>
+                        <i class="fa-regular fa-folder"></i>
+                    </p>
+                </div>
+            </div>
+            <!-- Player al footer centro-->
+            <div class="footer-player-center">
 
+            </div>
+            <!-- Player al footer destra-->
+            <div class="footer-player-dx">
+                <div class="footer-player-dx-icon">
+                    <i class="fa-solid fa-list"></i>
+                </div>
+                <div class="footer-player-dx-icon">
+                    <i class="fa-solid fa-display"></i>
+                </div>
+                <div class="footer-player-dx-icon">
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="volumebar">
+                    <hr>
+                    <div class="volumebar-active">
+                        <hr>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </footer>
 </body>
 </html>

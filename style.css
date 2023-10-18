@@ -83,7 +83,7 @@ main .mainpanel .mainpanelhead button{
 /***** Menu alto di navigazione Pannello Principale****/
 
 main .mainpanel .spotify-nav ul{
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #7d7f84;
     flex-wrap: wrap;
     list-style: none;
@@ -132,6 +132,105 @@ main .mainpanel .spotify-nav ul{
 }
 
 /****** FOOTER *****/
+
+footer{
+    background-color: #282828;
+}
+.footer-player{
+    display: flex;
+}
+
+/***** Zona sinistra del footer ******/
+
+.footer-player .footer-player-sx{
+    color: white;
+    display: flex;
+    width: 30%;
+    margin: 1.875rem 0rem;
+    align-items: center;
+}
+
+.footer-player .footer-player-sx .footer-playes-sx-img{
+    width: 1.875rem;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+}
+
+.footer-player .footer-player-sx .footer-player-sx-info{
+    margin-right: 1.5625rem;
+}
+
+.footer-player .footer-player-sx .footer-player-sx-info p,
+.footer-player .footer-player-sx .footer-player-sx-options p{
+    color: #515151;
+}
+
+.footer-player .footer-player-sx .footer-player-sx-info p{
+    font-size: 10px;
+
+
+}
+.footer-player .footer-playes-sx-img img{
+    width: 100%;
+}
+
+/***** Zona centrale del footer ******/
+
+.footer-player .footer-player-center{
+    display: flex;
+    width: 60%;
+}
+
+
+/***** Zona destra del footer ******/
+
+.footer-player .footer-player-dx{
+    display: flex;
+    align-items: center;
+    gap: 0.5625rem;
+    width: 30%;
+}
+
+.footer-player-dx-icon{
+    width: 0.9375rem;
+}
+
+.footer-player-dx-icon i{
+    width: 100%;
+    color: white;
+}
+
+.footer-player-dx .volumebar{
+    width: 100%;
+    margin-right: 0.625rem;
+    position: relative;
+}
+
+.footer-player-dx .volumebar hr{
+    height: 0.3125rem;
+    width: 100%;
+    margin-right: 0.625rem;
+    border: 0;
+    background-color: #5a5a5a ;
+    border-radius: 15px;
+}
+
+.footer-player-dx .volumebar-active{
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+
+.footer-player-dx .volumebar-active hr{
+    height: 0.3125rem;
+    width: 25%;
+    margin-right: 0.625rem;
+    border: 0;
+    background-color: white ;
+    border-radius: 20px;
+}
+
 
 
 
