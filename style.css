@@ -48,7 +48,7 @@ body{
 
 .sidebar .sidebar-up .sidebar-icon-box,
 .sidebar .sidebar-down .sidebar-icon-box{
-    width: 30px;
+    width: 50px;
 }
 
 .sidebar .sidebar-up img,
@@ -56,6 +56,18 @@ body{
     width: 100%;
 }
 
+.sidebar .sidebar-spotify-logo{
+  width: 100%;
+}
+
+.sidebar .sidebar-up div:nth-child(1){
+    display: none;
+    width: 100%;
+}
+
+.sidebar .sidebar-up span{
+    display: none;
+}
 
 /***** Pannello Principale ****/
 
@@ -282,5 +294,30 @@ footer{
 
 
 
+/******** MEDIA QUERY DA SPOSTARE ************/
+
+@media screen and (min-width: 639px){
+    .sidebar{
+        width: 50%; /*** ! ***/
+    }
+
+    .sidebar .sidebar-up,
+    .sidebar .sidebar-down{
+        justify-content: flex-start;
+    }
+
+    .sidebar .sidebar-up div:nth-child(1){
+        display: block;
+    }
+
+    .sidebar .sidebar-up div:nth-child(2){
+        display: none;
+    }
+
+    .sidebar .sidebar-up span{
+        display: block;
+    }
+}
 
 
+    
