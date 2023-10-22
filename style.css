@@ -12,36 +12,29 @@
 .container{
     margin: 0 auto;
     padding: 0;
-    max-width: 1200px;
     display: flex;
 }
 
 
 
 /****** DEBUG *****/
-main h6{
-color: white;
 
-}
-
-.spotify{
-    display: flex;
-}
-
-
-.sidebar-down{
-    color: white;
-}
 
 
 /******* BODY *******/
 
 body{
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
 }
 
 
 /****** MAIN ********/
+
+main .spotify{
+    display: flex;
+    height: calc(100% - 5.625rem);
+}
 
 /***** Menu verticale sinistro ****/
 
@@ -54,7 +47,6 @@ body{
 
 .sidebar .sidebar-up,
 .sidebar .sidebar-down{
-    height: 50%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -64,11 +56,17 @@ body{
 
 .sidebar .sidebar-down{
     justify-content: flex-end;
+    margin-top: auto;
+    padding-left: 0.625rem;
 }
 
 
 .sidebar-up-spotifylogo{
-    width: 1.875rem;
+    width: 30px;
+}
+
+.sidebar-up-spotifylogo img{
+    width: 100%;
 }
 
 .sidebar .sidebar-up .sidebar-icon-box img,
@@ -103,11 +101,10 @@ body{
 /******+ Sezione Elenco Playlist ******/
 
 .sidebar .playlist-section{
-    height: 75%;
     display: none;
-    align-items: center;
     padding-left: 1.25rem;
-    color: #a3a3a3
+    color: #a3a3a3;
+    overflow-y: hidden;
 }
 
 .sidebar .playlist-section h6{
@@ -124,6 +121,11 @@ body{
     gap: 0.625rem;
 }
 
+
+.sidebar .playlist-section-elenco{
+    overflow: auto;
+}
+
 .sidebar .playlist-section ul{
     display: flex;
     flex-direction: column;
@@ -138,8 +140,9 @@ body{
 
 .mainpanel{
     width: 90%;
+    display: flex;
+    flex-direction: column;
     background-color: #141922;
-    overflow-y: auto;
 }
 
 main .mainpanelhead{
@@ -148,6 +151,10 @@ main .mainpanelhead{
     align-items: center;
     justify-content: flex-end;
     height: 5.625rem;
+}
+
+main .mainpanel-body{
+    margin-bottom: 5.625rem;
 }
 
 main .mainpanel .mainpanelhead button{
@@ -171,6 +178,10 @@ main .mainpanel .spotify-nav ul{
     gap: 1.5625rem;
     padding: 1.25rem 1.875rem;
     text-decoration: none;
+}
+
+main .mainpanel .spotify-nav li:hover{
+    color: white;
 }
 
 /***** Griglia Recently Played*****/
@@ -215,7 +226,6 @@ main .mainpanel .spotify-nav ul{
 
 .created-for-you{
     display: none;
-    
 }
 
 .created-for-you h2 {
@@ -235,6 +245,7 @@ main .mainpanel .spotify-nav ul{
 
   .popular-artist{
     display: none;
+    margin-bottom: 2rem;
   }
 
   .popular-artist .songs .song .song-img img{
@@ -259,7 +270,13 @@ main .mainpanel .spotify-nav ul{
 
 footer{
     background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 5.625rem;
 }
+
 .footer-player{
     display: flex;
 }
@@ -347,14 +364,6 @@ footer{
 }
 /***** Zona destra del footer ******/
 
-footer{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 5.625rem;
-}
-
 .footer-player .footer-player-dx{
     display: flex;
     align-items: center;
@@ -414,6 +423,10 @@ footer{
         width: 35%; 
     }
 
+    .mainpanel{
+        width: 65%%;
+    }
+
     .sidebar-up-spotifylogo{
         width: 8.25rem;
         padding-left: 1.25rem;
@@ -432,14 +445,6 @@ footer{
         align-items: flex-start;
     }
 
-    .sidebar .sidebar-up{
-        height: 13%;
-    }
-
-    .sidebar .sidebar-down{
-        height: 12%;
-    }
-
     .sidebar .sidebar-up .sidebar-icon-box li{
         display: flex;
         align-items: center;
@@ -456,13 +461,15 @@ footer{
 
     .sidebar .playlist-section{
         display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 
 /**** Layout: LARGE *****/
 
-@media screen and (min-width: 960px){
+@media screen and (min-width: 992px){
 
     .songs .song img{
         width: 140px;
