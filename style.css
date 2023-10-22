@@ -12,7 +12,7 @@
 .container{
     margin: 0 auto;
     padding: 0;
-    max-width: 1440px;
+    max-width: 1200px;
     display: flex;
 }
 
@@ -173,7 +173,7 @@ main .mainpanel .spotify-nav ul{
     text-decoration: none;
 }
 
-/***** Griglia Songs *****/
+/***** Griglia Recently Played*****/
 
 .recentlyplayed h2{
     color: white;
@@ -231,6 +231,29 @@ main .mainpanel .spotify-nav ul{
     color: #5b5f64;
   }
 
+  /****** Sezione: Popular Artis ********/
+
+  .popular-artist{
+    display: none;
+  }
+
+  .popular-artist .songs .song .song-img img{
+    border-radius: 50%;
+  }
+
+  .popular-artist h2 {
+    color: white;
+    padding-top: 2.5rem;
+    padding-left: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .popular-artist p {
+    padding-left: 1.25rem;
+    padding-bottom: 2rem;
+    font-size: 0.625rem;
+    color: #5b5f64;
+  }
 
 /****** FOOTER *****/
 
@@ -383,8 +406,9 @@ footer{
 
 /******** MEDIA QUERY DA SPOSTARE ************/
 
+/**** Layout: MEDIUM *****/
 
-@media screen and (min-width: 639px){
+@media screen and (min-width: 768px){
 
     .sidebar{
         width: 35%; 
@@ -436,7 +460,9 @@ footer{
 }
 
 
-@media screen and (min-width: 878px){
+/**** Layout: LARGE *****/
+
+@media screen and (min-width: 960px){
 
     .songs .song img{
         width: 140px;
@@ -455,3 +481,24 @@ footer{
         width: 25%;
     }
 }
+
+/**** Layout: EXTRA-LARGE *****/
+
+@media screen and (min-width: 1200px){
+
+    .songs .song img{
+    }
+
+    .recentlyplayed .songs .song{
+        width: calc(100% / 6);
+    }
+
+    .popular-artist{
+        display: block;
+    }
+
+    .popular-artist .songs .song{
+        width: 25%;
+    }
+}
+
