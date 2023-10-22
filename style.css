@@ -419,4 +419,15 @@ footer{
 }
 
 
-    
+@media screen and (min-width: 878px){
+
+    .songs .song img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .songs .song{
+        width: calc(100% / 4);
+    }
+
+}
