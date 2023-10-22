@@ -16,15 +16,37 @@
     display: flex;
 }
 
+
+
+/****** DEBUG *****/
+main h6{
+color: white;
+
+}
+
+
+.spotify{
+    display: flex;
+    margin-bottom: 90px;
+}
+
+
+.sidebar-down{
+    color: white;
+}
+
+
+main .playlist-section{
+    color: #a3a3a3;
+}
+
+/******* BODY *******/
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
 
 
-/****** DEBUG *****/
-
-
-/******* BODY *******
 /****** MAIN ********/
 
 /***** Menu verticale sinistro ****/
@@ -32,23 +54,38 @@ body{
 .sidebar{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 10%;
     background-color: #000000;
-    
 }
 
 .sidebar .sidebar-up,
 .sidebar .sidebar-down{
+    height: 50%;
+    align-items: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     padding-top: 0.3125rem;
     gap: 0.9375rem;
 }
 
-.sidebar .sidebar-up .sidebar-icon-box,
-.sidebar .sidebar-down .sidebar-icon-box{
-    width: 50px;
+.sidebar .sidebar-down{
+    justify-content: flex-end;
+}
+
+
+.sidebar-up-spotifylogo{
+    width: 1.875rem;
+}
+
+.sidebar .sidebar-up .sidebar-icon-box img,
+.sidebar .sidebar-down .sidebar-icon-box img{
+    width: 1.125rem;
+}
+
+.sidebar-up ul p{
+    font-size: 8px;
+    padding-left: 0.625rem;
+    display: none;
 }
 
 .sidebar .sidebar-up img,
@@ -56,17 +93,50 @@ body{
     width: 100%;
 }
 
-.sidebar .sidebar-spotify-logo{
-  width: 100%;
+.sidebar-up ul,
+.sidebar-down ul{
+    list-style: none;
 }
 
-.sidebar .sidebar-up div:nth-child(1){
-    display: none;
-    width: 100%;
+.sidebar-icon-box-estesa{
+    display: flex;
 }
 
-.sidebar .sidebar-up span{
+.sidebar .sidebar-up .sidebar-up-spotifylogo img:nth-child(2){
+  display: none;
+}
+
+/******+ Sezione Elenco Playlist ******/
+
+.sidebar .playlist-section{
+    height: 75%;
     display: none;
+    align-items: center;
+    padding-left: 1.25rem;
+}
+
+.sidebar .playlist-section h6{
+    padding-bottom: 0.625rem;
+}
+
+.sidebar .playlist-section i{
+    font-size: 25px;
+}
+
+.sidebar .playlist-section p{
+    font-size: 10px;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.sidebar .playlist-section ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 0.625rem;
+    padding-top: 1.25rem;
+    gap: 0.9375rem;
+    overflow-y: auto;
 }
 
 /***** Pannello Principale ****/
@@ -98,10 +168,10 @@ main .mainpanel .mainpanelhead button{
 
 main .mainpanel .spotify-nav ul{
     font-size: 0.75rem;
+    display: flex;
     color: #7d7f84;
     flex-wrap: wrap;
     list-style: none;
-    display: flex;
     justify-content: center;
     gap: 1.5625rem;
     padding: 1.25rem 1.875rem;
@@ -296,25 +366,54 @@ footer{
 
 /******** MEDIA QUERY DA SPOSTARE ************/
 
+
 @media screen and (min-width: 639px){
+
     .sidebar{
-        width: 50%; /*** ! ***/
+        width: 35%; 
     }
+
+    .sidebar-up-spotifylogo{
+        width: 8.25rem;
+        padding-left: 1.25rem;
+    }
+
+    .sidebar .sidebar-up .sidebar-up-spotifylogo img:nth-child(1){
+        display: none;
+      }
+
+    .sidebar .sidebar-up .sidebar-up-spotifylogo img:nth-child(2){
+        display: block;
+      }
 
     .sidebar .sidebar-up,
     .sidebar .sidebar-down{
-        justify-content: flex-start;
+        align-items: flex-start;
     }
 
-    .sidebar .sidebar-up div:nth-child(1){
+    .sidebar .sidebar-up{
+        height: 13%;
+    }
+
+    .sidebar .sidebar-down{
+        height: 12%;
+    }
+
+    .sidebar .sidebar-up .sidebar-icon-box li{
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-up ul p{
+        color: #5c5c5c;
         display: block;
     }
 
-    .sidebar .sidebar-up div:nth-child(2){
-        display: none;
+    .sidebar-up ul{
+        padding-left: 1.25rem;
     }
 
-    .sidebar .sidebar-up span{
+    .sidebar .playlist-section{
         display: block;
     }
 }
