@@ -403,6 +403,14 @@ footer{
 
 .footer-player-center-icon-row .footer-player-center-icon-row-timebar{
     width: 90%;
+    position: relative;
+}
+
+.footer-player-center-icon-row .footer-player-center-icon-row-activetimebar{
+    width: 25%;
+    position: absolute;
+    top:0;
+    left:0;
 }
 
 .footer-player-center-icon-row .footer-player-center-icon-row-timebar hr{
@@ -412,6 +420,22 @@ footer{
     background-color: #5a5a5a ;
     border-radius: 15px;
 }
+
+.footer-player-center-icon-row .footer-player-center-icon-row-activetimebar hr{
+    height: 0.3125rem;
+    width: 100%;
+    border: 0;
+    background-color: white ;
+    border-radius: 20px;
+}
+
+
+.footer-player-center-icon-row .footer-player-center-icon-row-activetimebar hr:hover{
+    background-color: #adff2f;
+}
+
+
+
 /***** Zona destra del footer ******/
 
 .footer-player .footer-player-dx{
@@ -446,7 +470,7 @@ footer{
 }
 
 .footer-player-dx .volumebar-active hr:hover{
-    color: #adff2f;
+    background-color: #adff2f;
 }
 
 .footer-player-dx .volumebar-active{
@@ -464,6 +488,7 @@ footer{
     background-color: white ;
     border-radius: 20px;
 }
+
 
 
 
